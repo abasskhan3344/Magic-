@@ -1,5 +1,5 @@
 {
-  "name": "midscene",
+  "name": "magic",
   "private": true,
   "version": "1.9.5",
   "scripts": {
@@ -32,16 +32,22 @@
     "commit-msg": "npx --no -- commitlint --edit $1"
   },
   "lint-staged": {
-    "*.{json,css}": ["npx biome check --diagnostic-level=info --fix"],
-    "*.{md,mdx}": ["npx prettier --write"],
-    "*.{less,scss}": ["npx prettier --write"],
+    "*.{json,css}": [
+      "npx biome check --diagnostic-level=info --fix"
+    ],
+    "*.{md,mdx}": [
+      "npx prettier --write"
+    ],
+    "*.{less,scss}": [
+      "npx prettier --write"
+    ],
     "*.{js,jsx,ts,tsx,mjs,cjs}": [
       "npx biome check --diagnostic-level=info --fix"
     ],
     "package.json": "pnpm run check-dependency-version"
   },
   "keywords": [],
-  "author": "",
+  "author": "abasskhan3344",
   "license": "MIT",
   "engines": {
     "pnpm": ">=9.3.0",
